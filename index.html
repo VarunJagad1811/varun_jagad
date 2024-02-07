@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Style the header */
+.header {
+  background-color: Tomato;
+  padding: 0.11px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #208;
 }
 
+/* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
@@ -21,58 +34,30 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
+/* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #1fd655;
   color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 </style>
 </head>
 <body>
 
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">HOME</a>
-  <a href="#education & achivements">EDUCATION & ACHIVEMENTS</a>
-  <a href="#skills">SKILLS</a>
-  <a href="#contacts">CONTACTS</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+<div class="header">
+  <h1 style="font-size:300%;"">PROFILE PAGE</h1>
 </div>
 
+<div class="topnav">
+  <a href="C:\Users\VARUN\Desktop\html sem2\home.html" target="_blank">Home</a>
+  <a href="C:\Users\VARUN\Desktop\html sem2\education.html" target="_blank">Education & Achivements</a>
+  <a href="C:\Users\VARUN\Desktop\html sem2\skills.html" tsarget="_blank">Skills</a>
+  <a href="C:\Users\VARUN\Desktop\html sem2\contacts.html" target="_blank">Contacts</a>
+ 
+</div>
+
+<img src="https://mail.google.com/mail/u/0?ui=2&ik=8f2e5cb251&attid=0.1&permmsgid=msg-f:1790172846894864561&th=18d7f8b831b7d8b1&view=att&disp=safe" alt="Flowers in Chania" width="1215" height="707">
 
 </body>
 </html>
